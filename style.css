@@ -1,0 +1,71 @@
+/*Abaixo zero a margin e pedding, padrão do navegador.*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*faça o tamanha da caixa, apartir da sua borda*/
+}
+
+/*Estabelecendo algumas variaveis e */
+:root {
+  font-size: 62.5%;
+
+  --bg-primary: #FFFFFF;
+  --bg-select: #02799D;
+  --color-text: #323238;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  
+  place-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  color: var(--color-text);
+  gap: clamp(2.0rem, 2.0rem + 10vw ,19.2rem);
+}
+
+.hide {
+  display: none;
+}
+
+#timer{
+ 
+  display: flex;
+
+  font-size: 12.6rem;
+}
+
+.box1 {
+  margin-top: 4.0rem;
+}
+
+button {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+/*
+button svg {
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem); /*min, ideal, maximo
+}
+*/
+
+
+.stop, .addTimer, .removeTimer{ 
+  margin-left: clamp(.5rem, 1rem + 5vw ,4.0rem);
+}
+
+#sounds {
+  display: grid;
+
+  grid-template-areas: "A B"
+  "C D";
+
+  gap: 3.2rem;
+}
